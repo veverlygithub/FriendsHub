@@ -38,7 +38,7 @@ class RegistrationViewController: UIViewController, AlertPresenter {
                         self.alertMessage(reference: self, title: _AlertTitle.MESSAGE, message: (error?.localizedDescription)!)
                     } else {
                         self.alertMessageWithOkAction(reference: self, title: _AlertTitle.MESSAGE, message: "Successfully Registered", result: {
-                            let loginVC: LoginViewController = LoginViewController.instantiate(fromAppStoryboard: .Login)
+                            let loginVC: LoginViewController = LoginViewController.instantiate(fromAppStoryboard: .Main)
                             self.navigationController?.pushViewController(loginVC, animated: true)
                         })
                     }
