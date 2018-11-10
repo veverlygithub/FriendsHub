@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>564831548215-4sur4orvl76s94luu7vt1bh8v14olpta.apps.googleusercontent.com</string>
+	<string>564831548215-2ltgeueom5iq7c13nbagcg0f69kd00mm.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.564831548215-4sur4orvl76s94luu7vt1bh8v14olpta</string>
+	<string>com.googleusercontent.apps.564831548215-2ltgeueom5iq7c13nbagcg0f69kd00mm</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCu-iXPxhNppncP5iQgEMtKgfS2vVSyK_A</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>rw.firebase.gettingstarted</string>
+	<string>none.FriendsHub</string>
 	<key>PROJECT_ID</key>
 	<string>friendshub-db7f6</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:564831548215:ios:11bd119eb6688866</string>
+	<string>1:564831548215:ios:bdfc227225535621</string>
 	<key>DATABASE_URL</key>
 	<string>https://friendshub-db7f6.firebaseio.com</string>
 </dict>

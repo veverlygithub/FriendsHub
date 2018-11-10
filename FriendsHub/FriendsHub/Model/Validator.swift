@@ -55,16 +55,27 @@ public class Validator {
         if let username = controller.emailTF.text, let password = controller.passwordTF.text, let confirmPassword = controller.reEnterTF.text {
             if username.isEmpty || password.isEmpty || confirmPassword.isEmpty {
                 ActionAlertController.alertMessage(reference: controller, title: _AlertTitle.MESSAGE, message: _AlertMessage.Registration.ERROR_REGISTRATION_01)
-                print("Empty")
-            } else if Validator.isPasswordInvalid(controller: controller, text: password) == false {
-            } else if password != confirmPassword || Validator.isValidEmail(testStr: username) {
+            } else if Validator.isValidEmail(testStr: username) {
+                ActionAlertController.alertMessage(reference: controller, title: _AlertTitle.MESSAGE, message: _AlertMessage.Registration.ERROR_REGISTRATION_02)
+            }else if Validator.isPasswordInvalid(controller: controller, text: password) == false {
+            } else if password != confirmPassword {
                 ActionAlertController.alertMessage(reference: controller, title: _AlertTitle.MESSAGE, message: _AlertMessage.Registration.ERROR_REGISTRATION_05)
-                print("Invalid")
+            }
+            else {
+                return true
+            }
+        }
+        return false
+    }
+    
+    class func validateLogIn(controller: LoginViewController) -> Bool {
+        if let email = controller.emailTF.text, let password = controller.passwordTF.text {
+            if email.isEmpty || password.isEmpty {
+                ActionAlertController.alertMessage(reference: controller, title: _AlertTitle.MESSAGE, message: _AlertMessage.Login.ERROR_LOGIN_01)
             } else {
                 return true
             }
         }
-        
         return false
     }
 }

@@ -13,6 +13,8 @@ enum AppStoryBoard: String {
     
     case Main
     case Messages
+    case Registration
+    case ForgotPassword
     
     
     var instance : UIStoryboard {

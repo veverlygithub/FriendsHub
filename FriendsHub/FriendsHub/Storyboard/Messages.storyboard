@@ -13,25 +13,32 @@
         <!--Messages View Controller-->
         <scene sceneID="E9u-6i-XfD">
             <objects>
-                <viewController storyboardIdentifier="MessagesViewControllerID" id="7oo-hG-UN3" customClass="MessagesViewController" customModule="SocialHub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessagesViewControllerID" id="7oo-hG-UN3" customClass="MessagesViewController" customModule="FriendsHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QkG-bH-ODY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orca" translatesAutoresizingMaskIntoConstraints="NO" id="nuY-Gf-GRK">
-                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="724" id="cVM-JD-AeG"/>
+                                    <constraint firstAttribute="height" constant="812" id="dtZ-Wa-NwE"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqB-h7-bOt">
+                                <rect key="frame" x="166" y="396" width="71" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nuY-Gf-GRK" firstAttribute="leading" secondItem="CGQ-qb-sTw" secondAttribute="leading" id="25w-Im-oRh"/>
-                            <constraint firstItem="nuY-Gf-GRK" firstAttribute="trailing" secondItem="CGQ-qb-sTw" secondAttribute="trailing" id="5a3-z6-ghn"/>
-                            <constraint firstAttribute="bottom" secondItem="nuY-Gf-GRK" secondAttribute="bottom" id="RpU-IA-hje"/>
-                            <constraint firstItem="nuY-Gf-GRK" firstAttribute="top" secondItem="CGQ-qb-sTw" secondAttribute="top" id="XDp-mJ-akV"/>
-                            <constraint firstItem="nuY-Gf-GRK" firstAttribute="width" secondItem="QkG-bH-ODY" secondAttribute="width" id="gF7-vv-NQP"/>
+                            <constraint firstAttribute="bottom" secondItem="nuY-Gf-GRK" secondAttribute="bottom" id="KxU-f9-CLH"/>
+                            <constraint firstItem="nuY-Gf-GRK" firstAttribute="top" secondItem="QkG-bH-ODY" secondAttribute="top" id="ZgO-Wy-Shm"/>
+                            <constraint firstItem="nuY-Gf-GRK" firstAttribute="leading" secondItem="CGQ-qb-sTw" secondAttribute="leading" id="cZO-S3-Jeo"/>
+                            <constraint firstItem="nuY-Gf-GRK" firstAttribute="trailing" secondItem="CGQ-qb-sTw" secondAttribute="trailing" id="dL0-gv-0Mu"/>
+                            <constraint firstItem="nuY-Gf-GRK" firstAttribute="width" secondItem="QkG-bH-ODY" secondAttribute="width" id="nm4-N4-Pqc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CGQ-qb-sTw"/>
                     </view>
@@ -40,25 +47,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXs-cb-JgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="999.20000000000005" y="100.49261083743843"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="GNJ-iL-TsL">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4sO-fh-aco" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HFb-hp-M9R">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7oo-hG-UN3" kind="relationship" relationship="rootViewController" id="qOD-l2-AqF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6lJ-dY-zvh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="56.799999999999997" y="100.49261083743843"/>
         </scene>
     </scenes>
     <resources>

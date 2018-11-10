@@ -10,6 +10,7 @@ import Foundation
 
 struct _AlertTitle {
     static let MESSAGE = "Message"
+    static let ERROR = "ERROR"
 }
 
 struct _AlertMessage {
@@ -19,15 +20,24 @@ struct _AlertMessage {
     }
     
     struct Login {
-        static let invalidEmail = "Invalid email."
-        static let invalidPassword = "Invalid password."
+        static let ERROR_LOGIN_01 = "Please input required fields"
+        static let ERROR_LOGIN_02 = "Invalid email."
+        static let ERROR_LOGIN_03 = "Invalid password."
+        static let ERROR_LOGIN_04 = "User account not found. Try registering"
+        static let ERROR_LOGIN_05 = "Incorrect username/password combination."
     }
     
     struct Registration {
-        static let ERROR_REGISTRATION_01 = "Please input required feilds."
+        static let ERROR_REGISTRATION_01 = "Please input required fields."
         static let ERROR_REGISTRATION_02 = "Please input valid Email Address."
         static let ERROR_REGISTRATION_03 = "Password must be 8-20 characters long and must contain one digit(0-9) and one lowercase and one uppercase letter."
         static let ERROR_REGISTRATION_04 = "Either your email is invalid or password doesn't match."
         static let ERROR_REGISTRATION_05 = "Password doesn't match."
+        static let ERROR_REGISTRATION_06 = "Congrats. You are successfully registered."
+    }
+    
+    struct Analytic {
+        static let REGISTRATION = "Registration"
+        static let FORGOT_PASSWORD = "Forgot Password"
     }
 }

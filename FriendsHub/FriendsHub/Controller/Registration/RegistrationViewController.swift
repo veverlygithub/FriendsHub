@@ -3,7 +3,7 @@
 //  SocialHub
 //
 //  Created by Team Mobile on 21/10/2018.
-//  Copyright © 2018 Team Mobile. All rights reserved.
+//  Copyright © 2018 Team Mobile. All rights reserved.   
 //
 
 import UIKit
@@ -37,7 +37,7 @@ class RegistrationViewController: UIViewController, AlertPresenter {
                     if error != nil {
                         self.alertMessage(reference: self, title: _AlertTitle.MESSAGE, message: (error?.localizedDescription)!)
                     } else {
-                        self.alertMessageWithOkAction(reference: self, title: _AlertTitle.MESSAGE, message: "Successfully Registered", result: {
+                        self.alertMessageWithOkAction(reference: self, title: _AlertTitle.MESSAGE, message: _AlertMessage.Registration.ERROR_REGISTRATION_06, result: {
                             let loginVC: LoginViewController = LoginViewController.instantiate(fromAppStoryboard: .Main)
                             self.navigationController?.pushViewController(loginVC, animated: true)
                         })
